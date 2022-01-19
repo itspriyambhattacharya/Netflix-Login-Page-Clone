@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./favicon.png" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/all.min.css">
+</head>
+
+<body class="bg-black md:bg-[url('/bg_opacity.jpg')]">
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="/logo.png" alt="logo" class="w-28 md:w-52">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="px-4 py-16 w-full md:bg-[rgba(0,0,0,0.8)] md:w-2/6 md:mx-auto md:px-12 md:rounded-md md:mb-16" id="input-form">
+            <h1 class="text-4xl text-white font-bold pl-6 mb-8 font-netflix-sign-in">Sign In</h1>
+            <input type="text" placeholder="Email or phone number"
+                class="w-full px-5 py-3 mb-4 bg-[#333] rounded-md text-white outline-0">
+            <input type="password" name="password" id="password" placeholder="Password"
+                class="w-full px-5 py-3 mb-4 bg-[#333] rounded-md text-white outline-0">
+            <button class="font-netflix-sign-in font-bold text-white bg-red-700 w-full rounded-md px-5 py-3 mt-5">Sign
+                In</button>
+            <div id="remember-me-help-row" class="flex justify-between items-center mt-4">
+                <div id="checkbox" class="flex justify-center items-center gap-1">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember" class="text-[#b3b3b3] text-sm">Remember Me</label>
+                </div>
+                <span id="help" class="text-[#b3b3b3] text-sm">Need Help?</span>
+            </div>
+            <div id="login-with-fb" class="flex gap-3 mt-5">
+                <img src="/fb.png" alt="fb logo" class="w-5">
+                <p class="text-[#737373] text-sm hover:cursor-pointer">Login with Facebook</p>
+            </div>
+            <div id="new-to-netflix" class="mt-5">
+                <p class="font-netflix-sign-in text-[#737373]">New to Netflix? <span
+                        class="text-white underline-offset-2 hover:underline hover:cursor-pointer">Sign up now.</span>
+                </p>
+            </div>
+            <div id="recaptcha" class="mt-5 mb-32">
+                <p class="text-[#737373] font-netflix-sign-in text-sm leading-4">This page is protected by Google
+                    reCAPTCHA to ensure you're not a bot. <span><a href="#" class="text-blue-500">Learn More</a></span>
+                </p>
+            </div>
+        </div>
+        <div id="questions-call-us" class="p-4 w-full border-t border-white border-solid md:bg-[rgba(0,0,0,0.8)] md:border-t-0 md:pl-32">
+            <h2 class="text-[#737373] font-netflix-sign-in mb-7">Questions? <span class="cursor-pointer hover:underline underline-offset-2">Call 000-800-040-9999</span></h2>
+            <div class="grid grid-cols-2 grid-rows-3 gap-3 justify-items-start md:grid-cols-4 md:grid-rows-2">
+                <a href="#" class="text-[#737373] text-sm hover:underline underline-offset-2">FAQ</a>
+                <a href="#" class="text-[#737373] text-sm hover:underline underline-offset-2">Help Centre</a>
+                <a href="#" class="text-[#737373] text-sm hover:underline underline-offset-2">Terms of Use</a>
+                <a href="#" class="text-[#737373] text-sm hover:underline underline-offset-2">Privacy</a>
+                <a href="#" class="text-[#737373] text-sm hover:underline underline-offset-2">Cookie Preference</a>
+                <a href="#" class="text-[#737373] text-sm hover:underline underline-offset-2">Corporate Information</a>
+            </div>
+            <div id="language-select" class="mt-7 relative">
+                <select name="language-select" id="language-select"
+                    class="bg-transparent border border-solid border-[#333] text-[#737373] rounded-sm px-8 py-3">
+                    <option value="english" class="bg-black">English</option>
+                    <option value="hindi" class="bg-black">Hindi</option>
+                </select>
+                <div class=" absolute left-2 top-3 mr-2">
+                    <i class="fas fa-globe text-[#737373]"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
